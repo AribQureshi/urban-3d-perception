@@ -1,0 +1,42 @@
+camera:
+  hfov_deg: 70.0
+
+detector:
+  weights: yolov8n.pt
+  conf: 0.35
+  tracker: bytetrack.yaml
+
+depth:
+  model_id: depth-anything/Depth-Anything-V2-Metric-Outdoor-Small-hf
+  max_depth_m: 80.0
+
+kalman:
+  process_noise: 2.0
+  meas_noise_rel: 0.05
+  meas_noise_min: 0.3
+
+risk:
+  lane_half_width_m: 1.8
+  ttc_critical_s: 1.5
+  ttc_high_s: 3.0
+  ttc_medium_s: 5.0
+
+ground:
+  ransac_iters: 300
+  inlier_thresh_m: 0.15
+  seed_top_frac: 0.55
+  max_tilt_deg: 30.0
+
+ego_mask:              # parts of the frame showing your own car; 0 = off
+  bottom_frac: 0.0
+  top_frac: 0.0
+  max_overlap: 0.2
+
+anomaly:
+  contamination: 0.1
+  min_track_frames: 5
+
+run:
+  max_frames: 300
+  stride: 2
+  cloud_stride: 3

@@ -1,0 +1,6 @@
+# Camera filmed from inside the car: dashboard, steering wheel and the driver's hands
+# fill the bottom of the frame. Unlisted keys keep their defaults (see default.yaml).
+#   python scripts/run.py --video samples/Drive.mp4 --config configs/cockpit.yaml
+ego_mask:
+  bottom_frac: 0.32    # dashboard edge sits at 69-74% of frame height in samples/Drive.mp4
+  max_overlap: 0.2
