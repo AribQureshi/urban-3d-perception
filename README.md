@@ -2,7 +2,7 @@
 
 **Monocular metric 3D perception and collision-risk assessment from a single dashcam.**
 
-[Live demo](https://YOUR-USERNAME.github.io/urban-3d-perception/) · [Technical report](REPORT.md) · ![tests](https://github.com/YOUR-USERNAME/urban-3d-perception/actions/workflows/ci.yml/badge.svg)
+[Live demo](https://AribQureshi.github.io/urban-3d-perception/) · [Technical report](REPORT.md) · ![tests](https://github.com/AribQureshi/urban-3d-perception/actions/workflows/ci.yml/badge.svg)
 
 ![demo](docs/demo.gif)
 
